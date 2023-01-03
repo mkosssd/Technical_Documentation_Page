@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior:smooth;
+}
+
+#main-doc{
+    font-family: 'Open Sans', Arial, sans-serif;
+
+}
+
+.sidebar {
+    width: 22vw;
+    height: 100%;
+    font-size: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+
+.sidebar ul {
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 15px 0 0 0;
+    line-height: 2em;
+}
+
+.sidebar ul li a, p {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.sidebar header h2 {
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 700;
+}
+
+.nav-link {
+    margin: auto;
+    padding: 10px;
+    list-style-type: none;
+    border-top: 1px solid black;
+}
+
+li a {
+    text-decoration: none;
+}
+.main{
+    width: calc(100%-22vw);
+    position: absolute;
+    font-size: 0.8em;
+    left:24vw;
+    margin:0 2em 0 0.8em;
+}
+.main h2{
+    font-size: 5vh;
+    font-weight: 550;
+    margin:1em 0 0.5em 0;
+}
+.main ul li{
+    list-style-position: inside;
+    color: rgba(0, 0, 0, 0.7);
+    margin-left: 5em;
+
+}
+.main p, code{
+    margin-left: 2em;
+    margin-top: 1em;
+    margin:1em 0 1em 2em;
+}
+code, br{
+    display: block;
+   margin:1em 0 1em 4em;
+   background-color: azure;
+}
+#innerList li{
+    margin: 1.5em 0 1em 8em;
+}
+
+@media only screen and (max-width: 500px) {
+        /* For mobile phones: */
+        .sidebar {
+            position: absolute;
+            height: 25%;
+            width: 100vw;
+            font-size: 60%;
+            overflow-y: auto;
+            overflow-x: hidden;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+        }
+        .main {
+            top:20vh;
+            width: 100%;
+            left:0;
+            margin-left: 0;
+        }
+         .sidebar header h2 {
+            font-size:1.5em;
+            padding:10px 0;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+        }
+    }
+       
